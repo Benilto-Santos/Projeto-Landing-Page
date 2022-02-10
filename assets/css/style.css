@@ -1,0 +1,597 @@
+@media(min-width:769px) {
+    .box-geral {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1920px;
+        min-width: 320px;
+        min-height: 100vh;
+        background-color: #e51e2a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conteudo-geral {
+        width: 90%;
+        box-shadow: 0 0 100px rgba(0, 0, 0, 0.3);
+        border-radius: 20px;
+        padding: 0 20px 20px 20px;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        height: 100px;
+    }
+
+    .logo {
+        width: 160px;
+    }
+
+    .btnOpenMenu {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.3rem;
+        gap: 20px;
+    }
+
+    .menu li {
+        text-transform: capitalize;
+    }
+
+    .menu li a {
+        color: #fff;
+    }
+
+    .menu .btnCloseMenu {
+        display: none;
+    }
+
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    main section {
+        width: 50%;
+    }
+
+    main section h1 {
+        color: #fff;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        font-size: 2.5rem;
+        text-shadow: 1px 0 1px #000;
+    }
+
+    main section h2 {
+        color: #fff;
+        font-size: 2rem;
+        margin-bottom: 10px;
+        text-transform: capitalize;
+    }
+
+    main section p {
+        color: rgba(255, 255, 255, 0.8);
+        margin-bottom: 10px;
+        font-size: 1.3rem;
+    }
+
+    main section a {
+        display: inline-block;
+        color: #e51e2a;
+        text-transform: capitalize;
+        background-color: #fff;
+        padding: 15px 25px;
+        text-align: center;
+        border-radius: 20px;
+    }
+
+    main img {
+        width: 40%;
+    }
+
+    .newletter {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(229, 30, 42, 0.7));
+    }
+
+    .newletter form {
+        border: 1px solid #fff;
+        width: 50%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .newletter form h2 {
+        text-align: center;
+        font-size: 2rem;
+        color: rgba(255, 255, 255, 0.9);
+        margin: 20px auto;
+    }
+
+    .newletter form label {
+        color: #fff;
+        font-size: 1.4rem;
+    }
+
+    .newletter form input {
+        padding: 10px;
+        width: 80%;
+        border-radius: 8px;
+        border: 2px solid #fff;
+        background-color: rgba(255, 255, 255, 0.2);
+        outline: none;
+        margin-bottom: 20px;
+        color: #fff;
+    }
+
+    .newletter form input::placeholder {
+        color: #fff;
+    }
+
+    .newletter form button{
+        padding: 12px 20px;
+        text-transform: capitalize;
+        border-radius: 8px;
+        border: 1px solid #fff;
+        cursor: pointer;
+        background-color: #fff;
+    }
+
+    .newletter .btnCloseNewltter {
+        position: absolute;
+        width: 60px;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    .social-media {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #fff;
+    }
+
+    .social-media img {
+        width: 50px;
+    }
+
+    footer p {
+        text-align: center;
+        color: #fff;
+    }
+
+}
+
+@media(min-width:320px) and (max-width:425px) {
+    .box-geral {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1920px;
+        min-width: 320px;
+        height: 100vh;
+        background-color: #e51e2a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conteudo-geral {
+        width: 90%;
+        box-shadow: 0 0 100px rgba(0, 0, 0, 0.3);
+        border-radius: 20px;
+        padding: 0 20px 20px 20px;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        height: 80px;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .btnOpenMenu {
+        width: 50px;
+    }
+
+    .menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(229, 30, 42, 0.7));
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu img {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 50px;
+    }
+
+    .menu li {
+        text-transform: uppercase;
+        font-size: 1.5rem;
+    }
+
+    .menu li a {
+        margin: 10px auto;
+        display: block;
+        color: #fff;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main section h1 {
+        color: #fff;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+        text-shadow: 1px 0 1px #000;
+    }
+
+    main section h2 {
+        color: #fff;
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+        text-transform: capitalize;
+    }
+
+    main section p {
+        color: rgba(255, 255, 255, 0.8);
+        margin-bottom: 10px;
+    }
+
+    main section a {
+        display: inline-block;
+        color: #e51e2a;
+        text-transform: capitalize;
+        background-color: #fff;
+        padding: 8px 12px;
+        text-align: center;
+        border-radius: 40px;
+    }
+
+    main img {
+        width: 70%;
+    }
+
+    main .newletter {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #e51e2a;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(229, 30, 42, 0.7));
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .newletter form {
+        width: 90%;
+        padding: 10px;
+        border: 3px solid #fff;
+        border-radius: 20px;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+    main .newletter form h2 {
+        text-align: center;
+        font-size: 1.2rem;
+        margin: 10px auto;
+        color: #fff;
+    }
+
+    main .newletter form label {
+        display: none;
+    }
+
+    main .newletter form input {
+        padding: 10px;
+        margin-bottom: 10px;
+        width: 90%;
+        border-radius: 40px;
+        border: 2px solid #fff;
+        outline: none;
+        color: #fff;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    main .newletter form input::-webkit-input-placeholder {
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    main .newletter form button {
+        padding: 12px 20px;
+        border-radius: 20px;
+        border: none;
+        text-align: center;
+        text-transform: uppercase;
+        background-color: #fff;
+        color: #e51e2a;
+    }
+
+    main .newletter .btnCloseNewltter {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 50px;
+    }
+
+    footer .social-media {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        gap: 15px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+        padding-bottom: 10px;
+    }
+
+    footer .social-media a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+    }
+
+    footer .social-media img {
+        width: 100%;
+    }
+
+    footer p {
+        text-align: center;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+
+}
+
+@media(min-width:426px) and (max-width: 768px) {
+    .box-geral {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1920px;
+        min-width: 320px;
+        min-height: 100vh;
+        background-color: #e51e2a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conteudo-geral {
+        width: 70%;
+        box-shadow: 0 0 100px rgba(0, 0, 0, 0.3);
+        border-radius: 20px;
+        padding: 0 20px 20px 20px;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        height: 80px;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .btnOpenMenu {
+        width: 50px;
+    }
+
+    .menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(229, 30, 42, 0.7));
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu img {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 50px;
+    }
+
+    .menu li {
+        text-transform: uppercase;
+        font-size: 1.5rem;
+    }
+
+    .menu li a {
+        margin: 10px auto;
+        display: block;
+        color: #fff;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main section h1 {
+        color: #fff;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        font-size: 1.8rem;
+        text-shadow: 1px 0 1px #000;
+    }
+
+    main section h2 {
+        color: #fff;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        text-transform: capitalize;
+    }
+
+    main section p {
+        color: rgba(255, 255, 255, 0.8);
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+    }
+
+    main section a {
+        display: inline-block;
+        color: #e51e2a;
+        text-transform: capitalize;
+        background-color: #fff;
+        padding: 12px 20px;
+        text-align: center;
+        border-radius: 40px;
+    }
+
+    main img {
+        width: 70%;
+    }
+
+    main .newletter {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #e51e2a;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(229, 30, 42, 0.7));
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .newletter form {
+        width: 90%;
+        padding: 10px;
+        border: 3px solid #fff;
+        border-radius: 20px;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+    main .newletter form h2 {
+        text-align: center;
+        font-size: 1.2rem;
+        margin: 10px auto;
+        color: #fff;
+    }
+
+    main .newletter form label {
+        display: none;
+    }
+
+    main .newletter form input {
+        padding: 10px;
+        margin-bottom: 10px;
+        width: 90%;
+        border-radius: 40px;
+        border: 2px solid #fff;
+        outline: none;
+        color: #fff;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    main .newletter form input::-webkit-input-placeholder {
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    main .newletter form button {
+        padding: 12px 20px;
+        border-radius: 20px;
+        border: none;
+        text-align: center;
+        text-transform: uppercase;
+        background-color: #fff;
+        color: #e51e2a;
+    }
+
+    main .newletter .btnCloseNewltter {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 50px;
+    }
+
+    footer .social-media {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        gap: 15px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+        padding-bottom: 10px;
+    }
+
+    footer .social-media a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+    }
+
+    footer .social-media img {
+        width: 100%;
+    }
+
+    footer p {
+        text-align: center;
+        color: rgba(255, 255, 255, 0.8);
+    }
+}
